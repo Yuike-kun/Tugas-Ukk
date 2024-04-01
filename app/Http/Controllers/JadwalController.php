@@ -86,8 +86,7 @@ class JadwalController extends Controller
      */
     public function show(Jadwal $jadwal)
     {
-        $jadwal = $jadwal->with(['kelas','mapel'])->firstOrFail();
-        return view('pages.jadwal.show', compact('jadwal'));
+    //   
     }
 
     /**

@@ -1,6 +1,7 @@
 <?php 
 
 // if the menu isnt a header (first level menu) or doesnt have a header then set header_name to false
+// masih perlu ku kembangkan, terutama buat route_name dengan active_name nya ku ubah saja
 
 return [
     [
@@ -17,7 +18,7 @@ return [
         'header_name' => 'Admin Menu',
         'has_sub' => true,
         'sub_active_link' => [
-            'guru.index','siswa.index','mapel.index','jadwal.create'
+            'guru.index','siswa.index','mapel.index','jadwal.index','jadwal.create'
         ],
         'submenu' => [
             [

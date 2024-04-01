@@ -31,6 +31,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('/guru', GuruController::class)->except('create','edit');
     Route::resource('/mapel', MapelController::class)->except('create','edit');
     Route::resource('/user', UserController::class)->except('create','edit');
-    Route::resource('/jadwal', JadwalController::class)->except('edit');
+    Route::resource('/jadwal', JadwalController::class)->except('edit', 'show');
     Route::post('/jadwal/storesecond', [JadwalController::class, 'store_second'])->name('jadwal.storesecond');
 });

@@ -18,7 +18,7 @@
         <!-- Dashboard -->
         @foreach (config()->get('sidebar') as $test)
             @php
-                $nv_liank = $test['route_name'] != null ? route($test['route_name']) : 'javascript:void(0)';
+                $nav_link = $test['route_name'] != null ? route($test['route_name']) : 'javascript:void(0)';
             @endphp
             @if ($test['header_name'])
                 <li class="menu-header small text-uppercase">

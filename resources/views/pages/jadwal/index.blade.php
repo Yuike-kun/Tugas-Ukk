@@ -70,9 +70,6 @@
                             </td>
                             <td>
                                 <div class="input-group">
-                                    <a class="btn btn-sm btn-info" href="{{ route('jadwal.show', ['jadwal' => $i->id]) }}">
-                                        <i class="bx bx-info-circle"></i>
-                                    </a>
                                     <button class="btn btn-sm btn-warning" data-bs-target="#modalEdit-{{ $i->id }}"
                                         data-bs-toggle="modal">
                                         <i class="bx bx-edit"></i>
